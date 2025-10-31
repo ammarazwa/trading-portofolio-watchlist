@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Dashboard Sederhana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <h1>📈 Trading Dashboard</h1>
+        </header>
+
+    <main class="dashboard-main-container">
+        
+        <section id="main-content" class="landing-page-card">
+            
+            <div id="market-overview" class="landing-section">
+                <h2>Overview Pasar</h2>
+                <div id="market-ticker" class="ticker">
+                    Loading stock data...
+                </div>
+                <button id="refresh-button" class="action-button">Refresh Watchlist Prices</button>
+                </div>
+
+            <div id="watchlist-section" class="landing-section">
+                <h2>Daftar Pantauan (Watchlist)</h2>
+                <form id="add-stock-form">
+                    <input type="text" id="stock-symbol-input" placeholder="Masukkan Simbol Saham (mis: GOOG)" required>
+                    <button type="submit">Tambah</button>
+                </form>
+                
+                <ul id="watchlist">
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        <p>© 2025 Trading Dashboard. Madde by meh</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

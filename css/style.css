@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.dashboard-header {
+    background-color: #0f4c75;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; /* Konten rata kiri */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-header h1 {
+    margin: 0;
+}
+
+.dashboard-main-container {
+    max-width: 1000px; 
+    margin: 20px auto; 
+    padding: 0 20px; 
+}
+
+.landing-page-card {
+    background-color: #2e3047;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    gap: 30px;
+}
+
+.landing-section {
+    padding: 10px;
+    /* Kedua bagian sekarang mengambil ruang yang sama (50/50) */
+    flex: 1;
+}
+
+#market-overview {
+    border-right: 1px solid #43455c;
+    padding-right: 30px;
+}
+
+.ticker {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #99aab5;
+}
+
+#add-stock-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#stock-symbol-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #43455c;
+    border-radius: 4px;
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0f4c75;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1b262c;
+}
+
+#watchlist {
+    list-style: none;
+    padding: 0;
+}
+
+#watchlist li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #43455c;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.price-up {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.price-down {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: #c0392b;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.delete-button:hover {
+    background-color: #e74c3c;
+}
+
+.dashboard-footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+    color: #99aab5;
+    margin-top: 20px;
+    border-top: 1px solid #43455c;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .dashboard-main-container {
+        padding: 0 10px;
+    }
+    .landing-page-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .landing-section {
+        width: auto;
+    }
+    #market-overview {
+        border-right: none;
+        border-bottom: 1px solid #43455c;
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+}
